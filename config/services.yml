@@ -1,0 +1,7 @@
+imports:
+    - resource: parameters.yml
+    - resource: command.yml
+    - resource: finder.yml
+    - resource: kpi_report.yml
+    - resource: mailer.yml
+    - resource: twig.yml

@@ -1,0 +1,10 @@
+parameters:
+    mail.smtp.host: localhost
+    mail.smtp.port: 25
+    mail.smtp.username: username
+    mail.smtp.password: password
+
+    mail.from.name: KPI Report
+    mail.from.email: no-reply@example.com
+
+    kpi_report.receiver: ['jane.doe@example.com', 'john.doe@example.com']

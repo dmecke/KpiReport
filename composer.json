@@ -1,0 +1,26 @@
+{
+    "name": "dmecke/kpi-report",
+    "require": {
+        "php": ">=5.4",
+        "swiftmailer/swiftmailer": "^5.4",
+        "twig/twig": "^1.18",
+        "symfony/console": "^2.7",
+        "symfony/dependency-injection": "^2.7",
+        "symfony/config": "^2.7",
+        "symfony/yaml": "^2.7",
+        "symfony/finder": "^2.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Mecke",
+            "email": "daniel.mecke@cunningsoft.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": {
+            "KpiReport": "src"
+        }
+    }
+}

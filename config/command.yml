@@ -1,0 +1,9 @@
+services:
+    kpi_report.command.list:
+        class: KpiReport\Command\ListCommand
+        calls:
+            - [setLister, [@kpi_report.lister]]
+    kpi_report.command.send:
+        class: KpiReport\Command\SendCommand
+        calls:
+            - [setSender, [@kpi_report.sender]]

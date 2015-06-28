@@ -1,0 +1,3 @@
+services:
+    finder:
+        class: Symfony\Component\Finder\Finder
