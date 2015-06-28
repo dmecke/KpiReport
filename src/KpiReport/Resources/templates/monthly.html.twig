@@ -1,0 +1,48 @@
+<h1>Monthly KPI Report</h1>
+<p>{{ date }}</p>
+
+<h2>Onlinetennis Classic</h2>
+<table>
+    <thead>
+        <tr>
+            <th>MAU</th>
+            <th>Signups</th>
+            <th>Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ classic_mau.current }}</td>
+            <td>{{ classic_signups.current }}</td>
+            <td>{{ classic_revenue.current/100 }} Euro</td>
+        </tr>
+        <tr>
+            <td>{% if classic_mau.change > 0 %}+{% endif %}{{ classic_mau.change }}</td>
+            <td>{% if classic_signups.change > 0 %}+{% endif %}{{ classic_signups.change }}</td>
+            <td>{% if classic_revenue.change > 0 %}+{% endif %}{{ classic_revenue.change/100 }} Euro</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Onlinetennis Speed</h2>
+<table>
+    <thead>
+        <tr>
+            <th>MAU</th>
+            <th>Signups</th>
+            <th>Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ speed_mau.current }}</td>
+            <td>{{ speed_signups.current }}</td>
+            <td>{{ speed_revenue.current/100 }} Euro</td>
+        </tr>
+        <tr>
+            <td>{% if speed_mau.change > 0 %}+{% endif %}{{ speed_mau.change }}</td>
+            <td>{% if speed_signups.change > 0 %}+{% endif %}{{ speed_signups.change }}</td>
+            <td>{% if speed_revenue.change > 0 %}+{% endif %}{{ speed_revenue.change/100 }} Euro</td>
+        </tr>
+    </tbody>
+</table>

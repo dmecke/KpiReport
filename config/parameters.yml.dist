@@ -7,4 +7,7 @@ parameters:
     mail.from.name: KPI Report
     mail.from.email: no-reply@example.com
 
+    keen.project_id: project_id
+    keen.read_key: read_key
+
     kpi_report.receiver: ['jane.doe@example.com', 'john.doe@example.com']

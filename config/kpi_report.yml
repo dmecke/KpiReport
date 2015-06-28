@@ -1,13 +1,16 @@
 services:
     kpi_report.generator:
         class: KpiReport\Generator
-        arguments: [@twig.environment]
+        arguments: [@twig.environment, @kpi_report.report.monthly]
     kpi_report.lister:
         class: KpiReport\Lister
         arguments: [@finder]
     kpi_report.mailer:
         class: KpiReport\Mailer
         arguments: [@swift.mailer, @swift.message]
+    kpi_report.report.monthly:
+        class: KpiReport\Report\Monthly
+        arguments: [%keen.project_id%, %keen.read_key%]
     kpi_report.sender:
         class: KpiReport\Sender
         arguments: [@kpi_report.mailer, @kpi_report.generator, %kpi_report.receiver%]
